@@ -2,12 +2,13 @@
 
 // qanda models
 type Question struct {
-	prompt string
+	Prompt string `json:"prompt"`
 }
 
 type AudioArgument struct {
-	username string
-	audio    byte
+	Username string `json:"username"`
+	Audio    byte   `json:"audio"`
+	Question string `json:"question"`
 }
 
 // qanda views
